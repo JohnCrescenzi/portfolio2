@@ -1,0 +1,161 @@
+<DOCTYPE! html>
+<head>
+  <title>John Crescenzi | Web Developer</title>
+  <link href='https://fonts.googleapis.com/css?family=Luckiest Guy|Lobster|Shadows+Into+Light|Pacifico|Fredoka One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="background">
+    <nav>
+      <!--
+      <img src="img/logo2.jpg">
+    -->
+      <ul>
+        <li><a id="contact" href="#">Contact</a></li>
+        <li><a id="about" href="#">About</a></li>
+        <li><a id="portfolio" class="active" href="#">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <div id="changingDivs">
+      <div id="portfolioDiv">
+        <h1>Hi, my name is John Crescenzi<br />
+           and I'm a web developer from Philadelphia</h1>
+      </div>
+      <div id="aboutDiv">
+        <div id="aboutImage">
+          <p class="about">At the Sustainability Hackathon '15</p>
+          <a href="http://technical.ly/philly/2015/10/19/code-philly-sustyhack2015/" target="_blank"><img src="img/sustyHack.jpg"/></a>
+        </div>
+        <h1>When I'm not coding, I'm either playing strategy video games, reading, or working out<br />
+          As an ex Kinesiology Major, I love moving whenever I'm not in front of a computer through Kripalu Yoga and Shaolin Kung Fu</h1>
+      </div>
+      <div id="contactDiv">
+        <h1>Feel free to reach out to me for new opportunities!</h1><br />
+
+        <a href="mailto:johnjaycec@gmail.com?subject=Hi%20there!&body=Here's%20a%20great%20job%20opportunity!"><img src="img/emailWhite.svg"/><p>johnjaycec@gmail.com</p></a><br />
+        <img src="img/phone.png"/ id="noOpacity"><p>215-407-3563 for Job Opportunities only!</p><br />
+        <a href="http://www.linkedin.com/in/JohnCrescenzi" target="_blank"><img src="img/linkedinWhite.svg"/><p>linkedin.com/in/johncrescenzi</p><br />
+        <a href="http://www.github.com/JohnCrescenzi" target="_blank"><img src="img/githubWhite.svg"/><p>github.com/JohnCrescenzi</p><br />
+
+      </div>
+      <div id="scroll">
+        <h2 id="anchor">
+          <a href="#anchor" class="topLink">
+          <img src="img/arrowDown.png"/>
+          <img src="img/arrowDown.png"/>
+          Recent Work
+          <img src="img/arrowDown.png"/>
+          <img src="img/arrowDown.png"/>
+          </a>
+        </h2>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="recentWork">
+  <a href="http://www.kylecurrey.com" target="_blank"><img src="img/kcExample.png"/></a>
+  <a href="http://www.pixiebytes.net" target="_blank"><img src="img/pixieBytesExample.png"/></a>
+  <a href="https://github.com/CfABrigadePhiladelphia/homeless-services" target="_blank"><img src="img/resourceAwarenessCropped4.png"/></a>
+  <!-- <button>View More</button> -->
+  <!-- <button>Resume</button> -->
+</div>
+<div id="recentWorkText">
+  <p>
+    Freelancing<br />
+    <a href="http://www.kylecurrey.com" target="_blank">Kylecurrey.com</a><br />
+    HTML5/CSS3/Javascript/jQuery and hosted on Wordpress<br />
+  </p>
+  <p>
+    Freelancing<br />
+    <a href="http://www.pixiebytes.net" target="_blank">Pixiebytes.net</a><br />
+    HTML5/CSS3/Javascript/jQuery<br />
+    Hosted on Wordpress<br />
+    <a href="https://github.com/JohnCrescenzi/pixieBytes/blob/homePage/index.html" target="_blank"><img class="socialIcon2" src="img/github.svg"/></a>
+  </p>
+  <p>
+    Sustainability Hackathon<br />
+    "Resource Awareness"<br />
+    HTML5/CSS3/Javascript/jQuery<br />
+    For Sustainability Hackathon 2015<br />
+    <a href="https://github.com/CfABrigadePhiladelphia/homeless-services" target="_blank"><img class="socialIcon2" src="img/github.svg"/></a>
+  </p>
+</div>
+
+<footer>
+  <div id="featured">
+    <div id="featuredLogo1" class="featuredLogo">
+      <a href="http://citypaper.net/septaninja-codeforphilly/" target="_blank"><img src="img/cityPaperLogo.png" /></a>
+    </div>
+    <div id="featuredLogo2" class="featuredLogo">
+      <a href="http://technical.ly/philly/2015/10/19/code-philly-sustyhack2015/" target="_blank"><img src="img/technicallyPhillyLogo.png" /></a>
+    </div>
+  </div>
+<a href="https://www.linkedin.com/in/johncrescenzi" target="_blank"><img class="socialIcon" src="img/linkedinWhite.svg"/></a>
+<a href="mailto:johnjaycec@gmail.com?subject=Hi%20there!&body=Here's%20a%20great%20job%20opportunity"><img class="socialIcon" src="img/emailWhite.svg"/></a>
+<a href="https://github.com/JohnCrescenzi" target="_blank"><img class="socialIcon" src="img/githubWhite.svg"/></a>
+<p id="#copyright">Copyright &copy 2016 John Crescenzi. All rights reserved.</p>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+
+  	$("a.topLink").click(function() {
+  		$("html, body").animate({
+  			scrollTop: $($(this).attr("href")).offset().top + "px"
+  		}, {
+  			duration: 500,
+  			easing: "swing"
+  		});
+  		return false;
+  	});
+
+  });
+
+  $('nav a').click(function(e) {
+      $('nav a').removeClass('active');
+      var $this = $(this);
+      if (!$this.hasClass('active')) {
+          $this.addClass('active');
+      }
+      e.preventDefault();
+  });
+
+$(document).ready(function() {
+    $("#aboutDiv").hide();
+    $("#contactDiv").hide();
+});
+    $("#about").click(function(){
+    $("#portfolioDiv").hide();
+    $("#contactDiv").hide();
+    $("#aboutDiv").show();
+});
+    $("#contact").click(function(){
+    $("#portfolioDiv").hide();
+    $("#aboutDiv").hide();
+    $("#contactDiv").show();
+});
+    $("#portfolio").click(function(){
+    $("#aboutDiv").hide();
+    $("#contactDiv").hide();
+    $("#portfolioDiv").show();
+  });
+  </script>
+
+  <!--
+  <script type="text/javascript">
+
+  var today = new Date();
+  var year = today.getFullYear();
+
+  var el = document.getElementById('copyright');
+  el.innerHTML= '<p> Copyright &copy;' + year + '</p>';
+
+  </script>
+  -->
+</body>
+</html>

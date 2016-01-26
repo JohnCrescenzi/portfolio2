@@ -1,0 +1,264 @@
+* {  color: #fff;
+  margin: 0;
+  border: 0;
+}
+/*********************************************************************************Navigation*******************************************************************************/
+nav {
+  width: 100%;
+  position: absolute;
+
+}
+
+nav li{
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  display: inline;
+  float: right;
+  margin-right: 10%;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+a.active {
+  border-bottom: thick solid #fff;
+}
+
+nav img {
+  float: left;
+  margin-left: 2%;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 200px;
+}
+/*********************************************************************************Wrapper*******************************************************************************/
+#wrapper {
+    float: left;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: url("http://static1.squarespace.com/static/519aa47ce4b0d48b4bf86768/51b3fb25e4b062dc340fafe3/51d1bff4e4b02a8119268879/1372700695813/Continental.gif")no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Lobster', cursive;
+}
+
+/*********************************************************************************Inner Wrapper*******************************************************************************/
+
+#background {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      text-shadow: -2px 2px 20px #000;
+}
+
+
+#background h2 {
+      font-size: 100px;
+}
+
+#changingDivs h1 {
+      padding-top: 15%;
+      padding-bottom: 5%;
+      max-height: 475px;
+      min-height: 475px;
+}
+
+/*********************************************************************************Divs That Change*******************************************************************************/
+
+
+#changingDivs #aboutDiv img {
+  display: block;
+      float: left;
+      min-width: 500px;
+      min-height: 500px;
+      margin-top: 10%;
+      margin-left: 10%;
+      border-radius: 100px;
+}
+
+#portfolioDiv h1 {
+  padding-left: 35%;
+}
+
+#aboutDiv p.about {
+  position: absolute;
+  margin-left: 12.5%;
+  margin-top: 32.5%;
+}
+
+#aboutDiv h1 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#contactDiv h1 {
+  padding-top: 6.05%;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+#contactDiv a {
+    text-decoration: none;
+}
+#contactDiv a:hover {
+  opacity: 0.5;
+}
+
+#noOpacity img:hover {
+  opacity: 0 !important;
+
+}
+#background button {
+  align-content: center;
+}
+
+#background img {
+  max-height: 75px;
+  max-width: 75px;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+/*********************************************************************************Scroll Anchor*******************************************************************************/
+#anchor a {
+  text-decoration: none;
+}
+
+#scrollClick {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+/*********************************************************************************Recent Work*******************************************************************************/
+
+#recentWork {
+  /*background-color: #333;*/
+  display: block;
+  min-height: 90%;
+  min-width: 100%;
+  max-width: 100%;
+  font-size: 24px;
+}
+
+#recentWork img {
+  float: left;
+  min-height: 450px;
+  max-height: 450px;
+  min-width: 30%;
+  max-width: 30%;
+  padding: 1% 1.66% 0 1.66%;
+  border-radius: 75px;
+}
+
+#recentWorkText p {
+  float: left;
+  min-height: 20%;
+  max-height: 20%;
+  min-width: 30%;
+  max-width: 30%;
+  font-family: 'Luckiest Guy';
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  text-shadow: -1px 1px 2px #aaa;
+  line-height: 40px;
+  padding: 1.5% 1.6%;
+}
+
+#recentWork img:hover {
+  opacity: 0.5;
+}
+
+#recentWork h1 {
+ text-align: center;
+}
+
+#recentWorkText a {
+  text-decoration: none;
+  color: #777;
+}
+
+#recentWorkText a:hover {
+  opacity: 0.5;
+}
+
+.socialIcon2 {
+  max-width: 60px;
+  max-height: 40px;
+  padding: 1% 2%;
+}
+
+.socialIcon2 img:hover {
+  background-color: none;
+}
+
+/*********************************************************************************Footer*******************************************************************************/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    float: left;
+    font-size: 20px;
+}
+
+#featured {
+  display: block;
+  width: 100%;
+}
+
+#featured h1 {
+  text-align: center;
+ }
+
+.featuredLogo {
+    display: inline-block;
+    padding-top: 0;
+    width: 33%;
+}
+
+#featuredLogo1 {
+  float:left;
+}
+
+#featuredLogo2 {
+  float:right;
+}
+
+.featuredLogo img:hover {
+  opacity: 0.5;
+}
+
+.socialIcon {
+  max-width: 60px;
+  max-height: 40px;
+  padding: 1% 2%;
+}
+
+.socialIcon:hover {
+  background-color: gray;
+}
+
+/*********************************************************************************Media Queries*******************************************************************************/
+
+/*@media (max-width: 1000px) {
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  li {
+    font-size: 18px !important;
+  }
+}
+*/
